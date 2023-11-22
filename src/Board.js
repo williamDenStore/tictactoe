@@ -1,7 +1,8 @@
 import Square from './Square';
 import { useState } from 'react';
 export default function Board({ xIsNext, squares, onPlay }) {
-    const winner = calculateWinner(squares)
+  
+  const winner = calculateWinner(squares)
   let status;
   if (winner){
     status = 'Winner: '+winner;
